@@ -10,14 +10,14 @@ const rpc = require("discordrpcgenerator");
 
 
 
-let NAME = "Name"
-let DETAILS = "Details"
-let STATE = "State"
-let URL = ""
-let APPID = ""
-let LARGEIMG = "Id Img"
+let NAME = "PPSSPP"
+let DETAILS = "Midnight Club 3 - DUB Edition"
+let STATE = "Playing"
+let URL = "https.com"
+let APPID = "977428145244340277"
+let LARGEIMG = "1"
 let LARGETEXT = "Large Text"
-let SMALLIMG = "Id Img"
+let SMALLIMG = "Id"
 let SMALLTEXT = "Id Img"
 
 
@@ -48,6 +48,8 @@ rpc.getRpcImage
         
          .setAssetsSmallImage(small.id)
          .setAssetsSmallText(SMALLTEXT)
+
+         .setStartTimestamp(Date.now()) 
         
 
           
